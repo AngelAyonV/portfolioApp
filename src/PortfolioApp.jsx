@@ -25,40 +25,39 @@ const PortfolioApp = () => {
         {/* Sección Nosotros */}
         <section
           id="about"
-          className="min-vh-100 d-flex align-items-center justify-content-center bg-light py-5"
+          className="min-vh-100 d-flex align-items-center justify-content-center bg-light "
         >
           <div className="container text-center">
             <AboutPage />
           </div>
         </section>
 
-        {/* Sección Contacto */}
+        {/* Sección de habilidades */}
         <section
-          id="contact"
-          className="min-vh-100 d-flex align-items-center justify-content-center py-5"
+          id="skills"
+          className="min-vh-100 d-flex align-items-center justify-content-center py-2"
         >
           <div className="container text-center">
-            <ContactPage />
+            <Skills />
           </div>
         </section>
-
+        <hr />
         {/* Sección de proyectos */}
         <section
           id="proyects"
-          className="min-vh-100 d-flex align-items-center justify-content-center py-5"
+          className="min-vh-100 d-flex align-items-center justify-content-center py-1"
         >
           <div className="container text-center">
             <Proyects />
           </div>
         </section>
-
-        {/* Sección de habilidades */}
+        {/* Sección Contacto */}
         <section
-          id="skills"
-          className="min-vh-100 d-flex align-items-center justify-content-center py-5"
+          id="contact"
+          className="min-vh-100 d-flex align-items-center justify-content-center py-3"
         >
           <div className="container text-center">
-            <Skills />
+            <ContactPage />
           </div>
         </section>
       </div>

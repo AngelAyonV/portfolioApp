@@ -130,15 +130,73 @@
 /* COMPONENTE AboutPage <---------------------------------------- */
 
 .about-page {
-  min-height: 100vh; /* Que ocupe toda la pantalla */
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
-  /* justify-content: center; Centra verticalmente */
-  align-items: center; /* Centra horizontalmente */
-  /* padding: 80px 20px; Espacio extra arriba y abajo */
-  text-align: center; /* Asegura que el texto esté centrado */
+  align-items: center;
+  text-align: center;
+  padding: 0; /* Eliminar cualquier padding que genere espacio */
+  margin: 0; /* Asegurar que no haya separación extra */
 }
 
+/* Mensaje en la parte superior */
+.about-header {
+  width: 100vw; /* Ocupa todo el ancho de la pantalla */
+  background-color: #343a40; /* Fondo gris */
+  padding: 20px 10px; /* Espaciado interno */
+  text-align: center;
+  /* box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); Sombra sutil */
+  margin: 0; /* Asegurar que no haya margen */
+  position: relative; /* Se mantiene en el flujo normal del documento */
+}
+
+/* Contenido principal */
+.about-content {
+  margin-top: 40px; /* Espaciado para que no quede pegado al mensaje */
+  max-width: 800px; /* Para que el texto no se haga demasiado ancho */
+}
+
+/* Línea separadora */
+.divider {
+  width: 3px;
+  height: 150px;
+  background: #343a40;
+  margin: auto;
+}
+/* componente SkillPage <--------------------------------------------------------------- */
+.skills-page {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  position: relative;
+  /* background: linear-gradient(135deg, #ffffff, #343a4066); Fondo tech */
+}
+
+.skills-container {
+  display: flex; /* Activa el diseño en fila */
+  flex-wrap: wrap; /* Permite que las imágenes bajen si no caben en una línea */
+  justify-content: center; /* Centra las imágenes horizontalmente */
+  align-items: center; /* Alinea verticalmente */
+  gap: 15px; /* Espaciado entre imágenes */
+  padding: 20px;
+  max-width: 100%;
+  overflow-x: hidden; /* Evita que se desborde horizontalmente */
+}
+
+.image {
+  width: 100px; /* Tamaño uniforme (ajústalo si es necesario) */
+  height: auto; /* Mantiene la proporción original */
+  object-fit: contain; /* Ajusta la imagen dentro sin recortarla */
+  border-radius: 10px; /* Bordes redondeados (opcional) */
+  transition: transform 0.3s ease-in-out; /* Efecto al pasar el mouse */
+}
+
+.image:hover {
+  transform: scale(1.1); /* Efecto de zoom al pasar el mouse */
+}
 /* componente ContactPage <----------------------------------------------------- */
 .contact-page {
   min-height: 100vh; /* Que ocupe toda la pantalla */
@@ -159,17 +217,12 @@
   padding: 80px 20px; /* Espacio extra arriba y abajo */
   text-align: center; /* Asegura que el texto esté centrado */
 }
-.-skills-page {
-  min-height: 100vh; /* Que ocupe toda la pantalla */
-  display: flex;
-  flex-direction: column;
-  justify-content: center; /* Centra verticalmente */
-  align-items: center; /* Centra horizontalmente */
-  padding: 80px 20px; /* Espacio extra arriba y abajo */
-  text-align: center; /* Asegura que el texto esté centrado */
-}
 
 html {
   scroll-padding-top: 80px; /* Ajusta el valor según el tamaño del navbar */
   scroll-behavior: smooth; /* Hace que el scroll sea suave */
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
+  width: 100%;
 }
