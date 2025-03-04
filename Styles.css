@@ -5,15 +5,199 @@
   min-height: 100vh; /* Ocupa toda la altura de la pantalla */
 }
 
-.about-page {
-  min-height: 100vh; /* Que ocupe toda la pantalla */
+/* COMPONENTE HomePge <-----------------------------------*/
+.home-page {
+  position: relative;
+  min-height: 0vh;
   display: flex;
   flex-direction: column;
-  justify-content: center; /* Centra verticalmente */
-  align-items: center; /* Centra horizontalmente */
-  padding: 80px 20px; /* Espacio extra arriba y abajo */
-  text-align: center; /* Asegura que el texto esté centrado */
+  align-items: center;
+  justify-content: center;
+  padding: 80px 20px;
+  text-align: center;
 }
+
+/* Contenedor de texto */
+.text-container {
+  max-width: 600px; /* Limita el ancho del texto */
+  margin-bottom: 0px;
+}
+
+/* Estilo del texto animado */
+.typewriter-container {
+  margin-top: 20px;
+}
+
+.typewriter {
+  color: rgb(0, 0, 148);
+  font-weight: bold;
+}
+
+/* Contenedor de la imagen */
+.image-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin-top: 30px;
+}
+
+/* Imagen */
+.profile-image {
+  width: 70%;
+  max-width: 500px; /* No haga la imagen demasiado grande */
+  height: auto;
+  z-index: 1;
+}
+/* ilustrativos */
+
+/* Animación combinada para un efecto TECH */
+.corner-line {
+  position: absolute;
+  background: rgba(0, 102, 255, 0.8);
+  transform-origin: center;
+  opacity: 0; /* Empieza invisible */
+  animation: expandLine 1s ease-out forwards,
+    glow 2s infinite alternate ease-in-out,
+    subtleMove 3s infinite alternate ease-in-out;
+  box-shadow: 0px 0px 10px rgba(0, 102, 255, 0.6);
+}
+
+/* Animación de expansión */
+@keyframes expandLine {
+  from {
+    transform: scaleX(0);
+    opacity: 0;
+  }
+  to {
+    transform: scaleX(1);
+    opacity: 1;
+  }
+}
+
+/* Animación de resplandor */
+@keyframes glow {
+  from {
+    box-shadow: 0px 0px 5px rgba(0, 102, 255, 0.5);
+  }
+  to {
+    box-shadow: 0px 0px 20px rgba(0, 102, 255, 1);
+  }
+}
+
+/* Animación de movimiento sutil */
+@keyframes subtleMove {
+  from {
+    transform: translateY(10);
+  }
+  to {
+    transform: translateY(10px);
+  }
+}
+
+/* Esquina superior izquierda */
+.line-top-left-horizontal {
+  top: 20px;
+  left: 0px;
+  width: 200px;
+  height: 6px;
+}
+
+.line-top-left-vertical {
+  top: 0px;
+  left: 20px;
+  width: 6px;
+  height: 100px;
+}
+
+/* Esquina inferior derecha */
+.line-bottom-right-horizontal {
+  bottom: 20px;
+  right: 0px;
+  width: 200px;
+  height: 6px;
+  background: rgb(89, 89, 89);
+}
+
+.line-bottom-right-vertical {
+  bottom: 0px;
+  right: 20px;
+  width: 6px;
+  height: 100px;
+  background: rgb(89, 89, 89);
+}
+
+/* COMPONENTE AboutPage <---------------------------------------- */
+
+.about-page {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 0; /* Eliminar cualquier padding que genere espacio */
+  margin: 0; /* Asegurar que no haya separación extra */
+}
+
+/* Mensaje en la parte superior */
+.about-header {
+  width: 100vw; /* Ocupa todo el ancho de la pantalla */
+  background-color: #343a40; /* Fondo gris */
+  padding: 20px 10px; /* Espaciado interno */
+  text-align: center;
+  /* box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); Sombra sutil */
+  margin: 0; /* Asegurar que no haya margen */
+  position: relative; /* Se mantiene en el flujo normal del documento */
+}
+
+/* Contenido principal */
+.about-content {
+  margin-top: 40px; /* Espaciado para que no quede pegado al mensaje */
+  max-width: 800px; /* Para que el texto no se haga demasiado ancho */
+}
+
+/* Línea separadora */
+.divider {
+  width: 3px;
+  height: 150px;
+  background: #343a40;
+  margin: auto;
+}
+/* componente SkillPage <--------------------------------------------------------------- */
+.skills-page {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  position: relative;
+  /* background: linear-gradient(135deg, #ffffff, #343a4066); Fondo tech */
+}
+
+.skills-container {
+  display: flex; /* Activa el diseño en fila */
+  flex-wrap: wrap; /* Permite que las imágenes bajen si no caben en una línea */
+  justify-content: center; /* Centra las imágenes horizontalmente */
+  align-items: center; /* Alinea verticalmente */
+  gap: 15px; /* Espaciado entre imágenes */
+  padding: 20px;
+  max-width: 100%;
+  overflow-x: hidden; /* Evita que se desborde horizontalmente */
+}
+
+.image {
+  width: 100px; /* Tamaño uniforme (ajústalo si es necesario) */
+  height: auto; /* Mantiene la proporción original */
+  object-fit: contain; /* Ajusta la imagen dentro sin recortarla */
+  border-radius: 10px; /* Bordes redondeados (opcional) */
+  transition: transform 0.3s ease-in-out; /* Efecto al pasar el mouse */
+}
+
+.image:hover {
+  transform: scale(1.1); /* Efecto de zoom al pasar el mouse */
+}
+/* componente ContactPage <----------------------------------------------------- */
 .contact-page {
   min-height: 100vh; /* Que ocupe toda la pantalla */
   display: flex;
@@ -23,25 +207,8 @@
   padding: 80px 20px; /* Espacio extra arriba y abajo */
   text-align: center; /* Asegura que el texto esté centrado */
 }
-.home-page {
-  min-height: 100vh; /* Que ocupe toda la pantalla */
-  display: flex;
-  flex-direction: column;
-  justify-content: center; /* Centra verticalmente */
-  align-items: center; /* Centra horizontalmente */
-  padding: 80px 20px; /* Espacio extra arriba y abajo */
-  text-align: center; /* Asegura que el texto esté centrado */
-}
+
 .proyects-page {
-  min-height: 100vh; /* Que ocupe toda la pantalla */
-  display: flex;
-  flex-direction: column;
-  justify-content: center; /* Centra verticalmente */
-  align-items: center; /* Centra horizontalmente */
-  padding: 80px 20px; /* Espacio extra arriba y abajo */
-  text-align: center; /* Asegura que el texto esté centrado */
-}
-.-skills-page {
   min-height: 100vh; /* Que ocupe toda la pantalla */
   display: flex;
   flex-direction: column;
@@ -54,23 +221,8 @@
 html {
   scroll-padding-top: 80px; /* Ajusta el valor según el tamaño del navbar */
   scroll-behavior: smooth; /* Hace que el scroll sea suave */
-}
-
-/* home */
-
-/* Estilo del texto */
-.typewriter {
-  color: blue;
-  font-weight: bold;
-}
-
-/* Imagen al frente */
-.profile-image {
-  position: relative;
-  width: 200px; /* Ajusta el tamaño */
-  height: auto;
-  margin-top: -120px;
-  /* filter: drop-shadow(
-    5px 5px 10px rgba(0, 0, 0, 0.3)
-  ); Sombra para dar más profundidad */
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
+  width: 100%;
 }
