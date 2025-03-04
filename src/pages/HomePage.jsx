@@ -9,7 +9,7 @@ const HomePage = () => {
 
       {/* Imagen al frente */}
       <img
-        src="/public/images/home-image-sinf.jpg"
+        src="/public/images/home-image2.jpg"
         alt="Mi Foto"
         className="profile-image"
       />

@@ -58,19 +58,6 @@ html {
 
 /* home */
 
-/* Bola azul en el fondo */
-.background-circle {
-  position: absolute;
-  width: 300px; /* Ajusta el tamaño según lo necesites */
-  height: 300px;
-  background-color: rgba(0, 102, 255, 0.5); /* Azul con transparencia */
-  border-radius: 50%;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  z-index: -1; /* Envía la bola al fondo */
-}
-
 /* Estilo del texto */
 .typewriter {
   color: blue;
@@ -83,7 +70,7 @@ html {
   width: 200px; /* Ajusta el tamaño */
   height: auto;
   margin-top: -120px;
-  filter: drop-shadow(
+  /* filter: drop-shadow(
     5px 5px 10px rgba(0, 0, 0, 0.3)
-  ); /* Sombra para dar más profundidad */
+  ); Sombra para dar más profundidad */
 }
