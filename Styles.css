@@ -208,7 +208,7 @@
   text-align: center; /* Asegura que el texto esté centrado */
 }
 
-.proyects-page {
+.projects-page {
   min-height: 100vh; /* Que ocupe toda la pantalla */
   display: flex;
   flex-direction: column;
