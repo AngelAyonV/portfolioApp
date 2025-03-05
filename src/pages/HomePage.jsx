@@ -1,5 +1,6 @@
 import React from "react";
 import { Typewriter } from "react-simple-typewriter";
+import homeImage from "/images/home-image2.jpg";
 
 const HomePage = () => {
   return (
@@ -20,7 +21,7 @@ const HomePage = () => {
       {/* Imagen al frente */}
       <div className="image-container">
         <img
-          src="/images/home-image2.jpg"
+          src={homeImage}
           alt="Mi Foto"
           className="profile-image"
         />

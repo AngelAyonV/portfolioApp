@@ -1,4 +1,7 @@
 import React from "react";
+import images from "../../public/logo-images/index"; // Importa el archivo de barril
+import react from "/logo-images/react-image.png";
+
 
 const Skills = () => {
   return (
@@ -11,7 +14,7 @@ const Skills = () => {
 
       {/* Contenedor de imágenes flotantes */}
       <div className="skills-container">
-        <img src="/logo-images/react-image.png" alt="React" className="image" />
+        <img src={react} alt="React" className="image" />
         <img
           src="/logo-images/js-image.png"
           alt="JavaScript"
