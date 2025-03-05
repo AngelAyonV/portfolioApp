@@ -39,8 +39,8 @@ export const Navbar = () => {
               </a>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="#contact" onClick={closeNavbar}>
-                Contacto
+              <a className="nav-link" href="#skills" onClick={closeNavbar}>
+                Habilidades
               </a>
             </li>
             <li className="nav-item">
@@ -49,8 +49,8 @@ export const Navbar = () => {
               </a>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="#skills" onClick={closeNavbar}>
-                Habilidades
+              <a className="nav-link" href="#contact" onClick={closeNavbar}>
+                Contacto
               </a>
             </li>
           </ul>

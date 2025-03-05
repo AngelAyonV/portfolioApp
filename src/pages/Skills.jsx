@@ -5,8 +5,8 @@ const Skills = () => {
     <div className="skills-page">
       {/* Texto central llamativo */}
       <div className="skills-center">
-        <h1>🔥 Mis Tecnologías 🔥</h1>
-        <p>Las herramientas que uso para construir el futuro</p>
+        <h1>Mis Tecnologías 💻</h1>
+        <p>Las herramientas que uso para construir en los proyectos que trabajo</p>
       </div>
 
       {/* Contenedor de imágenes flotantes */}
@@ -35,7 +35,7 @@ const Skills = () => {
           className="image"
         />
         <img
-          src="/logo-images/boostrap.image.png"
+          src="/logo-images/boostrap-image.png"
           alt="Bootstrap"
           className="image"
         />

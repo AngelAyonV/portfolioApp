@@ -27,9 +27,9 @@ const AboutPage = () => {
           {/* Columna 1: Estudios */}
           <div className="col-md-5 p-4 bg-light rounded shadow my-4">
             <h3>🎓 Mis Estudios</h3>
-            <p>Graduado de [Nombre de tu Escuela/Universidad].</p>
-            <p>Especialización en [Tu Área].</p>
-            <p>Certificaciones en [Curso relevante].</p>
+            <p>Estudiante de [Facultad de Informatica UAS].</p>
+            <p>Licenciatura en Informatica. Especialización en [desarrollo de paginas web].</p>
+            <p>Ingles basico.</p>
           </div>
 
           {/* Línea separadora (solo en pantallas grandes) */}
@@ -40,16 +40,16 @@ const AboutPage = () => {
           {/* Columna 2: Experiencia */}
           <div className="col-md-5 p-4 bg-light rounded shadow">
             <h3>💼 Experiencia</h3>
-            <p>Desarrollador en [Empresa/Freelance].</p>
-            <p>Proyectos personales en React y Ruby on Rails.</p>
-            <p>Prácticas en [Empresa o Startup].</p>
+            <p>Practicante en [FCFM UAS] mantenimiento a la pagina de la facultad FIC.</p>
+            <p>Proyectos personales con React React Native.</p>
+            <p>Prácticas en [Area de sistemas en Funeraria Santa Maria de la Luz].</p>
           </div>
         </div>
 
         {/* Sección de habilidades con botón */}
-        <div className="mt-5">
+        <div className="py-4">
           <h3 className="fw-bold skills-text">🔥 Mis Habilidades</h3>
-          <button className="btn btn-dark mt-3 px-4 py-2" onClick={goToSkills}>
+          <button className="btn btn-dark mt-3 px-4 " onClick={goToSkills}>
             Ver Habilidades ↓
           </button>
         </div>
