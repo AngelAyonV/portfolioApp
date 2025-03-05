@@ -1,6 +1,17 @@
 import React from "react";
-import images from "../../public/logo-images/index"; // Importa el archivo de barril
 import react from "/logo-images/react-image.png";
+import javascript from "/logo-images/js-image.png";
+import rubyRails from "/logo-images/rubyrails-image.png";
+import html from "/logo-images/html-image.png";
+import css from "/logo-images/css-image.png";
+import tailwind from "/logo-images/tailwind-image.png";
+import reactNative from "/logo-images/reactnative-image.png";
+import bootstrap from "/logo-images/boostrap-image.png";
+import php from "/logo-images/php-image.png";
+import cpp from "/logo-images/cpp-image.png";
+import sql from "/logo-images/sql-image.png";
+import mysql from "/logo-images/mysql-image.png";
+import postgresql from "/logo-images/postgresql-image.png";
 
 
 const Skills = () => {
@@ -16,38 +27,38 @@ const Skills = () => {
       <div className="skills-container">
         <img src={react} alt="React" className="image" />
         <img
-          src="/logo-images/js-image.png"
+          src={javascript}
           alt="JavaScript"
           className="image"
         />
         <img
-          src="/logo-images/rubyrails-image.png"
+          src={rubyRails}
           alt="Ruby on Rails"
           className="image"
         />
-        <img src="/logo-images/html-image.png" alt="HTML" className="image" />
-        <img src="/logo-images/css-image.png" alt="CSS" className="image" />
+        <img src={html} alt="HTML" className="image" />
+        <img src={css} alt="CSS" className="image" />
         <img
-          src="/logo-images/tailwind-image.png"
+          src={tailwind}
           alt="TailwindCSS"
           className="image"
         />
         <img
-          src="/logo-images/reactnative-image.png"
+          src={reactNative}
           alt="React Native"
           className="image"
         />
         <img
-          src="/logo-images/boostrap-image.png"
+          src={bootstrap}
           alt="Bootstrap"
           className="image"
         />
-        <img src="/logo-images/php-image.png" alt="PHP" className="image" />
-        <img src="/logo-images/c++-image.png" alt="C++" className="image" />
-        <img src="/logo-images/sql-image.png" alt="SQL" className="image" />
-        <img src="/logo-images/mysql-image.png" alt="MySQL" className="image" />
+        <img src={php} alt="PHP" className="image" />
+        <img src={cpp} alt="C++" className="image" />
+        <img src={sql} alt="SQL" className="image" />
+        <img src={mysql} alt="MySQL" className="image" />
         <img
-          src="/logo-images/postgresql-image.png"
+          src={postgresql}
           alt="PostgreSQL"
           className="image"
         />
