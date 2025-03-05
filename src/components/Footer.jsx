@@ -5,11 +5,12 @@ const Footer = () => {
     <footer className="footer bg-dark text-light py-4">
       <div className="container text-center">
         <div className="row">
-          {/* 📌 Columna 1: Logo y nombre */}
-          <div className="col-md-4 mb-3">
-            <h5 className="fw-bold">Mi Empresa</h5>
-            <p className="text-muted">
-              Soluciones innovadoras para tu negocio.
+          {/* 📌 Columna 1: Logo y Eslogan */}
+          <div className="col-md-4 mb-3 text-center">
+            {/* <img src="/logo.png" alt="Ángel Ayón" className="logo-img mb-2" /> */}
+            <h5 className="fw-bold">🚀 Ángel Ayón</h5>
+            <p className="text-light">
+              Desarrollador web | React, React Native
             </p>
           </div>
 
@@ -44,28 +45,54 @@ const Footer = () => {
               </li>
             </ul>
           </div>
-
-          {/* 📌 Columna 3: Redes Sociales */}
-          <div className="col-md-4">
-            <h5 className="fw-bold">Buscame</h5>
-            <div className="d-flex justify-content-center">
-              <a href="#" className="me-3 text-light fs-4">
-                <i className="bi bi-facebook"></i>
-              </a>
-              <a href="#" className="me-3 text-light fs-4">
-                <i className="bi bi-instagram"></i>
-              </a>
-              <a href="#" className="text-light fs-4">
-                <i className="bi bi-whatsapp"></i>
-              </a>
-            </div>
+          {/* 📌 Columna 3: Links */}
+          <div className="col-md-4 mb-3">
+            <h5 className="fw-bold">📌 Búscame en:</h5>
+            <ul className="list-unstyled">
+              <li>
+                <a
+                  href="https://www.linkedin.com/in/TU-PERFIL"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  🔗 LinkedIn
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://www.computrabajo.com.mx/cvs/TU-PERFIL"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  💼 Computrabajo
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://www.occ.com.mx/perfil/TU-PERFIL"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  🎯 OCC Mundial
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://github.com/TU-USUARIO"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  🖥️ GitHub
+                </a>
+              </li>
+            </ul>
           </div>
         </div>
-
         {/* 📌 Copyright */}
         <div className="mt-4">
-          <p className="text-muted mb-0">
-            &copy; {new Date().getFullYear()} Todos los derechos reservados.
+          <p className="text-light text-decoration-none">
+            &copy; {new Date().getFullYear()} Todos los derechos reservados
+            Angel Ayon.
           </p>
         </div>
       </div>
