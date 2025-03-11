@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import logoImg from "../assets/projectsImages/logo-image-fondo.png";
 
 export const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false); // Estado para controlar el menú
@@ -10,8 +11,9 @@ export const Navbar = () => {
     <nav className="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
       <div className="container">
         {/* Logo */}
+
         <a className="navbar-brand my-3" href="#">
-          Angel Ayon
+          <img src={logoImg} alt="Angel Ayon Logo" className="navbar-logo" />
         </a>
 
         <button

@@ -51,14 +51,14 @@ const Footer = () => {
             <ul className="list-unstyled">
               <li>
                 <a
-                  href="https://www.linkedin.com/in/TU-PERFIL"
+                  href="https://mx.linkedin.com/in/angel-ayon-a2a51433b"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
                   🔗 LinkedIn
                 </a>
               </li>
-              <li>
+              {/* <li>
                 <a
                   href="https://www.computrabajo.com.mx/cvs/TU-PERFIL"
                   target="_blank"
@@ -66,8 +66,8 @@ const Footer = () => {
                 >
                   💼 Computrabajo
                 </a>
-              </li>
-              <li>
+              </li> */}
+              {/* <li>
                 <a
                   href="https://www.occ.com.mx/perfil/TU-PERFIL"
                   target="_blank"
@@ -75,10 +75,10 @@ const Footer = () => {
                 >
                   🎯 OCC Mundial
                 </a>
-              </li>
+              </li> */}
               <li>
                 <a
-                  href="https://github.com/TU-USUARIO"
+                  href="https://github.com/AngelAyonV"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
