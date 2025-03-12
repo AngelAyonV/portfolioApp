@@ -25,7 +25,7 @@ export const projectsData = [
     description:
       "App para buscar peliculas por su nombre con informacion de la misma, consumiendo una api.",
     image: moviesApp,
-    url: "https://tu-proyecto.com",
+    url: "https://angelayonv.github.io/Movies-search-API-React-vite/",
   },
   {
     id: 4,
@@ -33,6 +33,6 @@ export const projectsData = [
     description:
       "App para saber la informacion del clima por ciudad, consumiendo una api.",
     image: weatherApp,
-    url: "https://tu-proyecto.com",
+    url: "https://angelayonv.github.io/Weather-current-time-react-vite/",
   },
 ];
