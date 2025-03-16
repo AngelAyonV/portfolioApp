@@ -18,7 +18,9 @@ const ContactPage = () => {
     e.preventDefault();
     const phoneNumber = "+526672478101"; // Reemplaza con tu número en formato internacional (+52...)
     const whatsappMessage = `👋 Hola, mi nombre es ${formData.name}.\n📧 Email: ${formData.email}\n📝 Asunto: ${formData.subject}\n💬 Mensaje: ${formData.message}`;
-    const whatsappLink = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(whatsappMessage)}`;
+    const whatsappLink = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(
+      whatsappMessage
+    )}`;
     window.open(whatsappLink, "_blank");
   };
 
@@ -75,7 +77,7 @@ const ContactPage = () => {
             onChange={handleChange}
             required
           ></textarea>
-          <button type="submit">Enviar por WhatsApp 🚀</button>
+          <button type="submit">Enviar por WhatsApp</button>
         </form>
       </div>
     </div>

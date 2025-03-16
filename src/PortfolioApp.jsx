@@ -6,11 +6,13 @@ import ContactPage from "./pages/ContactPage";
 import Proyects from "./pages/Projects";
 import Skills from "./pages/Skills";
 import Footer from "./components/Footer";
+import FloatingButton from "./components/FloatingButton";
 
 const PortfolioApp = () => {
   return (
     <>
       <Navbar />
+      <FloatingButton />
       <div className="container-fluid p-0">
         {/* Sección Home */}
         <section

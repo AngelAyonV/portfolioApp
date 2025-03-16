@@ -111,16 +111,16 @@
 
 /* Esquina superior izquierda */
 .line-top-left-horizontal {
-  top: 20px;
-  left: 0px;
+  top: 0px;
+  left: 20px;
   width: 200px;
-  height: 6px;
+  height: 8px; /* Más gruesa */
 }
 
 .line-top-left-vertical {
   top: 0px;
   left: 20px;
-  width: 6px;
+  width: 8px; /* Más gruesa */
   height: 100px;
 }
 
@@ -129,14 +129,14 @@
   bottom: 20px;
   right: 0px;
   width: 200px;
-  height: 6px;
+  height: 8px; /* Más gruesa */
   background: rgb(89, 89, 89);
 }
 
 .line-bottom-right-vertical {
-  bottom: 0px;
-  right: 20px;
-  width: 6px;
+  bottom: 20px;
+  right: 0px;
+  width: 8px; /* Más gruesa */
   height: 100px;
   background: rgb(89, 89, 89);
 }
@@ -312,6 +312,58 @@
 
 .contact-form button:hover {
   background: #1ebe57;
+}
+/* boton flotante para descargar cv <----------------------------------------------------------- */
+/* Botón flotante */
+.floating-btn {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  background: #007bff;
+  color: white;
+  border: none;
+  padding: 12px 18px;
+  border-radius: 50px;
+  font-size: 16px;
+  cursor: pointer;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease, background 0.3s;
+  z-index: 1000;
+}
+
+/* Efecto de temblor */
+.shake {
+  animation: shake 0.5s ease-in-out;
+}
+
+@keyframes shake {
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+  25% {
+    transform: translateX(-5px);
+  }
+  50% {
+    transform: translateX(5px);
+  }
+  75% {
+    transform: translateX(-5px);
+  }
+}
+
+/* Efecto hover */
+.floating-btn:hover {
+  background: #0056b3;
+  transform: scale(1.1);
+}
+@media (max-width: 768px) {
+  .floating-btn {
+    bottom: 20px; /* Ajuste para que no estorbe en móviles */
+    right: 20px;
+    padding: 10px 14px;
+    font-size: 14px;
+  }
 }
 
 /* Responsividad: en móviles, las columnas se apilan */

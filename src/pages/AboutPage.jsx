@@ -28,7 +28,10 @@ const AboutPage = () => {
           <div className="col-md-5 p-4 bg-light rounded shadow my-4">
             <h3>🎓 Mis Estudios</h3>
             <p>Estudiante de [Facultad de Informatica UAS].</p>
-            <p>Licenciatura en Informatica. Especialización en [desarrollo de paginas web].</p>
+            <p>
+              Licenciatura en Informatica. Especialización en [desarrollo de
+              paginas web].
+            </p>
             <p>Ingles basico.</p>
           </div>
 
@@ -40,9 +43,15 @@ const AboutPage = () => {
           {/* Columna 2: Experiencia */}
           <div className="col-md-5 p-4 bg-light rounded shadow">
             <h3>💼 Experiencia</h3>
-            <p>Practicante en [FCFM UAS] mantenimiento a la pagina de la facultad FIC.</p>
+            <p>
+              Practicante en [FCFM UAS] mantenimiento a la pagina de la facultad
+              FIC.
+            </p>
             <p>Proyectos personales con React React Native.</p>
-            <p>Prácticas en [Area de sistemas en Funeraria Santa Maria de la Luz].</p>
+            <p>
+              Prácticas en [Area de sistemas en Funeraria Santa Maria de la
+              Luz].
+            </p>
           </div>
         </div>
 
