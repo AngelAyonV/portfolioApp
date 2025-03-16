@@ -1,5 +1,6 @@
 import React, { useState } from "react";
-import logoImg from "../assets/projectsImages/logo-image-fondo.png";
+// import logoImg from "../assets/projectsImages/logo-image-fondo.png";
+import logo1 from "../assets/projectsImages/logo-image-s-fondo.png";
 
 export const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false); // Estado para controlar el menú
@@ -13,7 +14,7 @@ export const Navbar = () => {
         {/* Logo */}
 
         <a className="navbar-brand my-3" href="#">
-          <img src={logoImg} alt="Angel Ayon Logo" className="navbar-logo" />
+          <img src={logo1} alt="Angel Ayon Logo" className="navbar-logo" />
         </a>
 
         <button
@@ -32,7 +33,7 @@ export const Navbar = () => {
           <ul className="navbar-nav ms-auto">
             <li className="nav-item">
               <a className="nav-link" href="#home" onClick={closeNavbar}>
-                Home
+                Inicio
               </a>
             </li>
             <li className="nav-item">
