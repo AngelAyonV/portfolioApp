@@ -15,8 +15,7 @@ export const projectsData = [
   {
     id: 2,
     title: "GifExpertApp",
-    description:
-      "Una app para buscar Gifs, consumiendo una api",
+    description: "Una app para buscar Gifs, consumiendo una api",
     image: GifApp,
     url: "https://gifs-experts-app-react-vite.netlify.app/",
   },
@@ -42,6 +41,6 @@ export const projectsData = [
     description:
       "App para agregar tareas y eliminarlas, con un contador de tareas, utilizando useReduce, context api y local storage.",
     image: taskTodoApp,
-    url: "https://angelayonv.github.io/Weather-current-time-react-vite/",
+    url: "https://angelayonv.github.io/todoApp-reduce/",
   },
 ];
