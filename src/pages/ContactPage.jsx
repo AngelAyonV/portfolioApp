@@ -1,4 +1,7 @@
 import React, { useState } from "react";
+import EmailIcon from "@mui/icons-material/Email";
+import PersonIcon from "@mui/icons-material/Person";
+import PhoneIcon from "@mui/icons-material/Phone";
 
 const ContactPage = () => {
   const [formData, setFormData] = useState({
@@ -28,23 +31,32 @@ const ContactPage = () => {
     <div className="contact-page">
       {/* Contenedor de información de contacto */}
       <div className="contact-info">
-        <div className="contact-box">
-          <h3>📧 Email</h3>
+        <div className="contact-box d-flex flex-column align-items-center">
+          <EmailIcon
+            style={{ fontSize: 36, color: "#1976d2", marginBottom: 4 }}
+          />
+          <h3>Email</h3>
           <p>angelayon.dev01@gmail.com</p>
         </div>
-        <div className="contact-box center-box">
-          <h3>✍ Nombre</h3>
+        <div className="contact-box center-box d-flex flex-column align-items-center">
+          <PersonIcon
+            style={{ fontSize: 36, color: "#388e3c", marginBottom: 4 }}
+          />
+          <h3>Nombre</h3>
           <p>Angel Yair Ayon Verdugo</p>
         </div>
-        <div className="contact-box">
-          <h3>📱 Teléfono</h3>
+        <div className="contact-box d-flex flex-column align-items-center">
+          <PhoneIcon
+            style={{ fontSize: 36, color: "#d32f2f", marginBottom: 4 }}
+          />
+          <h3>Teléfono</h3>
           <p>+52 667 247 8101</p>
         </div>
       </div>
 
       {/* Formulario de contacto vía WhatsApp */}
       <div className="contact-form">
-        <h3>💬 Envíame un mensaje por WhatsApp</h3>
+        <h3>Envíame un mensaje por WhatsApp</h3>
         <form onSubmit={sendMessageToWhatsApp}>
           <input
             type="text"

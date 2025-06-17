@@ -5,14 +5,6 @@ import homeImage from "/images/home-image2.jpg";
 const HomePage = () => {
   return (
     <div className="home-page ">
-      {/* Líneas en la esquina superior izquierda */}
-      <div className="corner-line line-top-left-horizontal"></div>
-      <div className="corner-line line-top-left-vertical"></div>
-
-      {/* Líneas en la esquina inferior derecha */}
-      <div className="corner-line line-bottom-right-horizontal"></div>
-      <div className="corner-line line-bottom-right-vertical"></div>
-
       <div className="text-container">
         <h1>Hola, soy Ángel Ayón.</h1>
         <p>Programador Web apasionado por la innovación.</p>
@@ -20,11 +12,7 @@ const HomePage = () => {
 
       {/* Imagen al frente */}
       <div className="image-container">
-        <img
-          src={homeImage}
-          alt="Mi Foto"
-          className="profile-image"
-        />
+        <img src={homeImage} alt="Mi Foto" className="profile-image" />
       </div>
       <div className="typewriter-container">
         <h1>
