@@ -63,10 +63,7 @@ const AboutPage = () => {
                 Prácticas en [Area de sistemas en Funeraria Santa Maria de la
                 Luz].
               </li>
-              <li>
-                Prácticas en [Area de sistemas en Funeraria Santa Maria de la
-                Luz].
-              </li>
+              <li>Prácticas en [Nexgen Systems].</li>
             </ul>
           </div>
         </div>
