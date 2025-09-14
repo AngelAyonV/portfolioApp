@@ -96,7 +96,7 @@
 /* Línea separadora */
 .divider {
   width: 3px;
-  height: 150px;
+  height: 100%;
   background: #343a40;
   margin: auto;
 }

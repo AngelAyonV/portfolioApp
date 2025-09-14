@@ -89,7 +89,25 @@ const ContactPage = () => {
             onChange={handleChange}
             required
           ></textarea>
-          <button type="submit">Enviar por WhatsApp</button>
+          <button
+            type="submit"
+            style={{
+              borderRadius: "999px",
+              padding: "12px 32px",
+              fontWeight: 600,
+              fontSize: "1.1rem",
+              background: "#1976d2",
+              color: "#fff",
+              border: "none",
+              cursor: "pointer",
+              marginTop: "12px",
+              letterSpacing: "1px",
+              boxShadow: "0 2px 8px rgba(0,0,0,0.08)",
+              transition: "background 0.2s",
+            }}
+          >
+            Enviar por WhatsApp
+          </button>
         </form>
       </div>
     </div>
