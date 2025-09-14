@@ -13,6 +13,9 @@ import cpp from "/logo-images/cpp-image.png";
 import sql from "/logo-images/sql-image.png";
 import mysql from "/logo-images/mysql-image.png";
 import postgresql from "/logo-images/postgresql-image.png";
+import typescript from "/logo-images/typescript_image.png";
+import git from "/logo-images/git-image.png";
+import nodeJS from "/logo-images/node-js-image.png";
 
 const Skills = () => {
   return (
@@ -65,6 +68,9 @@ const Skills = () => {
           { src: sql, alt: "SQL", name: "SQL" },
           { src: mysql, alt: "MySQL", name: "MySQL" },
           { src: postgresql, alt: "PostgreSQL", name: "PostgreSQL" },
+          { src: typescript, alt: "TypeScript", name: "TypeScript" },
+          { src: git, alt: "Git", name: "Git" },
+          { src: nodeJS, alt: "Node.js", name: "Node.js" },
         ].map((tech, idx) => (
           <div
             key={idx}
