@@ -39,21 +39,43 @@ const FloatingButton = () => {
           Haz clic en el botón para descargar mi CV en PDF.
         </Modal.Body>
         <Modal.Footer>
-          <Button variant="secondary" onClick={handleClose}>
-            Cerrar
-          </Button>
-          <Button
-            variant="primary"
-            onClick={() =>
-              window.open(
-                "https://drive.google.com/file/d/190ylWdiOYDLUT01LRFITowvJGWH7es1K/view?usp=sharing",
-                "_blank",
-                "noopener,noreferrer"
-              )
-            }
+          <div
+            style={{
+              display: "flex",
+              justifyContent: "center",
+              gap: "1rem",
+              marginTop: "8px",
+            }}
           >
-            Ver CV
-          </Button>
+            <Button
+              variant="secondary"
+              onClick={handleClose}
+              style={{
+                borderRadius: "999px",
+                padding: "10px 28px",
+                fontWeight: 600,
+              }}
+            >
+              Cerrar
+            </Button>
+            <Button
+              variant="primary"
+              onClick={() =>
+                window.open(
+                  "https://drive.google.com/file/d/1gA-WLo2tlZnai7daT8gHLla5LG7mZpmo/view?usp=sharing",
+                  "_blank",
+                  "noopener,noreferrer"
+                )
+              }
+              style={{
+                borderRadius: "999px",
+                padding: "10px 28px",
+                fontWeight: 600,
+              }}
+            >
+              Ver CV
+            </Button>
+          </div>
         </Modal.Footer>
       </Modal>
     </>

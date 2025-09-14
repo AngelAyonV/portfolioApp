@@ -11,6 +11,7 @@ export const projectsData = [
     description: "Un carrito de compras con productos y precios",
     image: carritoImg,
     url: "https://flourishing-medovik-ac6219.netlify.app/",
+    techs: ["React", "JavaScript", "CSS", "Bootstrap", "Vite"],
   },
   {
     id: 2,
@@ -18,6 +19,7 @@ export const projectsData = [
     description: "Una app para buscar Gifs, consumiendo una api",
     image: GifApp,
     url: "https://gifs-experts-app-react-vite.netlify.app/",
+    techs: ["React", "JavaScript", "CSS", "Vite", "Fetch API"],
   },
   {
     id: 3,
@@ -26,6 +28,7 @@ export const projectsData = [
       "App para buscar peliculas por su nombre con informacion de la misma, consumiendo una api.",
     image: moviesApp,
     url: "https://angelayonv.github.io/Movies-search-API-React-vite/",
+    techs: ["React", "JavaScript", "CSS", "Vite", "Fetch API"],
   },
   {
     id: 4,
@@ -34,6 +37,7 @@ export const projectsData = [
       "App para saber la informacion del clima por ciudad, consumiendo una api.",
     image: weatherApp,
     url: "https://angelayonv.github.io/Weather-current-time-react-vite/",
+    techs: ["React", "JavaScript", "CSS", "Vite", "Fetch API"],
   },
   {
     id: 5,
@@ -42,5 +46,14 @@ export const projectsData = [
       "App para agregar tareas y eliminarlas, con un contador de tareas, utilizando useReduce, context api y local storage.",
     image: taskTodoApp,
     url: "https://angelayonv.github.io/todoApp-reduce/",
+    techs: [
+      "React",
+      "JavaScript",
+      "CSS",
+      "Vite",
+      "Context API",
+      "useReducer",
+      "Local Storage",
+    ],
   },
 ];

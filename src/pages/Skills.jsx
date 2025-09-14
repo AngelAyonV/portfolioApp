@@ -42,7 +42,7 @@ const Skills = () => {
         </h1>
         <p
           style={{
-            color: "#333",
+            color: "#1b3c7bff",
           }}
         >
           Las herramientas que uso para construir en los proyectos que trabajo
